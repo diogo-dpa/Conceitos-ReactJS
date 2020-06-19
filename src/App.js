@@ -9,7 +9,7 @@ function App() {
   // Initialize repo
   const [repo, setRepo] = useState([])
 
-  // Execute once
+  // Execute once in the beginning
   useEffect( () => {
     api.get('/repositories').then(
       response => setRepo([...response.data])
